@@ -62,7 +62,6 @@ void randomisedQuickSort(long a[],long l,long r){
 	if(l>=r)
 		return;
 	long *partition=randomisedPartition(a,l,r);
-	//printf("%ld   %ld\n",partition[0]-1,partition[1]+1);
 	randomisedQuickSort(a,l,partition[0]-1);
 	randomisedQuickSort(a,partition[1]+1,r);
 }
