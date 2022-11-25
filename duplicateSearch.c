@@ -34,7 +34,6 @@ int binarySearch(long arr[],int low,int high,long key){
 
 	
 	if(arr[mid]==key){
-		//int pos=mid;
 		int pos=binarySearch(arr,low,mid-1,key);
 		if(pos!=-1)
 			return pos;
