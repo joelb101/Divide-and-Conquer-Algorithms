@@ -43,16 +43,18 @@ long *randomisedPartition(long a[],long l,long r){
 			if(a[j]==pivot)
 				j--;
 		}
-		if(a[j]==a[pivot]){
+		else if(a[j]==a[pivot]){
 			if(!flag){
-				m=i;
 				flag=1;
+				m=i;
 			}
 			m++;
 			swap(&a[j],&a[m]);
 		}
 	}
 	swap(&a[i],&a[pivot]);
+	if(m<i)
+		m=i;
 	partition[0]=i;
 	partition[1]=m;
 	return partition;
