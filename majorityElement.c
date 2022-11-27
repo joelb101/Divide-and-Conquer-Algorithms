@@ -26,9 +26,7 @@ long count(long a[],long l,long h,long key){
 		if(a[i]==key)
 			c++;
 	}
-	//if(c>((l+h)/2)+1)
 		return c;
-	//return 0;
 }
 
 long majority(long a[],long l,long h){
