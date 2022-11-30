@@ -26,8 +26,9 @@ of O(n) ).
 However, the code below can be further optimised to give a better time complexity of O(nlogn) if we avoid sorting
 at every level of recursion, by passing a pre-sorted array
 --------------------------------------------------------------------------------------------------------------------
-There's a good chance that the naive algorithm may run faster than the divide and conquer algorithm for sufficiently small input sizes.The input size for which the divide and conquer starts to outperform naive algortihm
-can be found out by testing both algorithm with different input sizes.
+There's a good chance that the naive algorithm may run faster than the divide and conquer algorithm for sufficiently 
+small input sizes.The input size for which the divide and conquer starts to outperform naive algortihm
+can be found out by testing both algorithms with different input sizes.
 For simplicity, lets assume the size at which divide and conquer outperforms naive algorithm to be 3.
 --------------------------------------------------------------------------------------------------------------------
 */
